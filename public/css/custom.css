@@ -1,0 +1,376 @@
+#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loader.gif') 50% 50% no-repeat rgba(0, 0, 0, 0.5);
+}
+
+.add_btn {
+    display: inline;
+}
+
+.back_btn {
+    display: none;
+    float: right;
+}
+
+.add_content, .caret, .add_content_map {
+    display: none;
+}
+
+.caret_profile {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.fa-edit {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #1ab394;
+    cursor: pointer;
+}
+
+.fa-trash {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #ec4758;
+    cursor: pointer;
+}
+
+.fa-eye {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #014067;
+    cursor: pointer;
+}
+
+.fa-map-marker {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 10px;
+    color: #23c6c8;
+    cursor: pointer;
+}
+
+#img_modal_preivew, #gif_modal_preview, #img_modal_preivew_big, #gif_modal_preview {
+    max-width: 170px;
+}
+
+.kitchen {
+    text-align: center;
+    color: #bebec3;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#btnView {
+    cursor: pointer;
+}
+
+#btnMap {
+    cursor: pointer;
+}
+
+.town_res_images {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.town_res_images > img {
+    width: 100%;
+}
+
+.town_res_images > p {
+    width: 100%;
+}
+
+.food_type_img {
+    height: 10%;
+}
+
+.multiselect-container {
+    overflow: auto;
+    height: 200px;
+}
+
+.meal_btn .btn-group {
+    width: 100%;
+}
+
+@media (max-width: 768px), (max-width: 1024px) {
+    #img_modal_preivew, #gif_modal_preview, #img_modal_preivew_big, #gif_modal_preview {
+        max-width: 88px;
+        margin-top: 10px;
+    }
+}
+
+.Dtd-center {
+    text-align: center;
+}
+
+.multiselect, .multiselect-container {
+    width: 100% !important;
+}
+
+@media (max-width: 768px), (max-width: 1024px) {
+    .image-imitation img {
+        width: 200px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .image-imitation img {
+        width: 130px !important;
+    }
+}
+
+dt, dd {
+    display: flex;
+}
+
+.w-25 a {
+    color: #1ab394 !important;
+    font-weight: bolder;
+    text-decoration: underline !important;
+}
+
+.w-25 a:hover {
+    color: black !important;
+    font-weight: bolder;
+    text-decoration: none !important;
+}
+
+@media (max-width: 1024px) {
+    #doughnutChart {
+        height: 180px !important;
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .multiselect {
+        width: 589px !important;
+    }
+}
+
+@media (max-width: 425px), (max-width: 768px) {
+    .multiselect {
+        width: 336px !important;
+    }
+
+    .multiselect, .multiselect-container {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .multiselect {
+        width: 288px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .multiselect {
+        width: 230px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 850px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cat_img img {
+        width: 140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cat_img img {
+        width: 140px;
+    }
+}
+
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 0px auto;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 26px;
+    z-index: 1;
+    top: 10px;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #4881fe;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.avatar-upload .avatar-edit input + label:hover {
+    background: #4881fe;
+    border-color: #4881fe;
+}
+
+.avatar-upload .avatar-edit input + label:after {
+    content: "\f044";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #FFFFFF;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+}
+
+.avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 6px solid #f1f1f1;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profileEditIcon {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 8px;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.auth_form {
+    margin-top: 150px;
+    opacity: 0.9;
+    padding: 20px;
+    background: #000000;
+    width: 300px;
+    height: 370px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6), inset 0px 1px 0px rgba(255, 255, 255, 0.04);
+}
+
+.form-control {
+    color: black !important;
+}
+
+.radio_class {
+    padding-right: 40px;
+    padding-left: 10px;
+    margin-top: -3px;
+}
+
+.path_style {
+    float: right;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 10px 0px 5px;
+    font-weight: bold;
+}
+
+.meal_box {
+    width: auto;
+    height: 150px;
+    max-width: 215px;
+    margin: 20px;
+}
+
+.round_id, .round_type, .level_id, .total_workout_time, .workout_time_type, .reps_type, .total_reps, .skip_time, .manual_time, .exercise_rest_time, .exercise_time, .is_round_repeat, .no_of_repetition, .rest_after_each_repetition, .is_round_optional {
+    display: none;
+}
+
+.link_button {
+    cursor: pointer;
+    border: 1px solid #17a2b8;
+    padding: 5px 20px 7px 20px;
+    margin: 10px;
+}
+
+.active_level {
+    border: 2px solid #1ab394;
+}
+
+.tooltip_p {
+    padding: 0 5px;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    border-radius: 100%;
+    margin-left: 3px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-right: 30px;
+}
